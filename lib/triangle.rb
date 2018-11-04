@@ -19,5 +19,8 @@ class Triangle
   end
 
   class TriangleError < StandardError
+    def message
+      "A triangle must have sides larger than 0 and cannot violate triangle inequality."
+    end
   end
 end
